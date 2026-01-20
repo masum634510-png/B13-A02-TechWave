@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* outline: 2px solid red !important; */
+    
 }
 body{
     font-family: 'inter', sans-serif ;
@@ -23,11 +23,14 @@ body{
 .navbar{
     display: flex;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 310px;
     max-width: 1200px;
     padding-bottom: 30px;
     padding-top: 30px;
     align-items: center;
+    text-align: center;
+    
     
 }
 .nav-items{
@@ -38,6 +41,7 @@ body{
     font-size: 16px;
     font-weight: 500;
 }
+
 
 .btn{
      background: var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1)));
@@ -57,7 +61,19 @@ body{
      gap: 7px;
      
 }
-/* banner style start */
+.mobile-menu-icon{
+    display: none;
+
+}
+.hr{
+    width: 1600px;
+    height: 0.5px;
+    background-color: #3e3f3f96;
+    margin: 15px auto !important;
+    border: #545355;
+    
+}
+/* banner--section--start */
 .banner{
     background-image: url('../image/hero-bg.png'); 
     width: 100%;
@@ -85,9 +101,22 @@ body{
      align-items: center;
      margin: 0 auto;
      padding: 150px 150px;
-     
-   
- 
+
+}
+.span{
+    font-size: 16px;
+    padding: 10px 30px;
+    background-color: #00FF88;
+    border-radius: 22px;
+    font-size: 20x;
+    font-weight: 800;
+    position: relative;
+    left: 9%;
+    top: 50px;
+    border: none;
+    cursor: pointer;
+    
+    
 }
 .banner-section h2{
     font-size: 60px;
@@ -139,15 +168,15 @@ body{
     background-color: #1a0b2e5b;
     cursor: pointer; 
 }
-/* about section style */
+/* about--section--start */
 .about{
     max-width: 1200px;
     margin: 0 auto;
-    background-color: #20084074;
     padding-bottom: 30px;
     padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+   
     
    
 }
@@ -167,6 +196,14 @@ body{
     text-align: center;
     margin-top: 16px;
     color: #dcdbdbf9;
+    
+}
+hr{
+    width: 1100px;
+    height: 0.5px;
+    background-color: #3e3f3f96;
+    margin: 100px auto !important;
+    border: #545355;
     
 }
 .title-text{
@@ -457,19 +494,55 @@ body{
 /* responsive design */
 
 @media screen and (max-width:576px) {
-   .nav-items, .button{
+
+/* navbar--style--start  */
+   .span{
+    font-size: 16px;
+    padding: 10px 30px;
+   
+    border-radius: 22px;
+    font-size: 20x;
+
+    position: relative;
+    left: 25%;
+    top: 35px;
+
+    }
+   .nav-items, .btn{
     display: none;
    }
-   .banner{
-      background-size: 100% 100% !important;
-      background-attachment: scroll;
+   .navbar{
+    display: flex;
+    margin-left: 0 auto;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 20px 20px;
+    width: 100%;
+    max-width: 100%;    
    }
+   .navbar img{
+    max-width: 150px;
+    height: auto;
+   }
+   .mobile-menu-icon{
+    display: flex;       
+}
+   .hr{
+    width: 100%;
+    margin-top: 30px;
+   }
+  /*  banner--section--start */
+   .banner{
+     background-size: 100% 100% !important;
+     background-attachment: scroll;
+   }
+  
    .banner-section P{
       font-size: 16px;
    }
    .banner-image{
     width: 50%;
-    padding: 20px 20px;
+    padding: 10px 10px;
    }
    .banner-image img{
     width: 40%;
@@ -478,6 +551,13 @@ body{
     display: flex;
     flex-direction: row;
     width: 100%;
+    
+   }
+   .btn2{
+    padding: 10px;
+   }
+   .btn3{
+    padding: 10px;
    }
  /*   about--section--start*/
    .about{
@@ -493,6 +573,9 @@ body{
    .about-title p{
     font-size: 16px;
    }
+   hr{
+    width: 80%;
+   }
    .about-text{
     display: flex;
     flex-wrap: wrap;
@@ -504,6 +587,9 @@ body{
     width: 50%;
     margin-bottom: 30px;
     text-align: center;
+   }
+   .about-card h3{
+    font-size: 30px;
    }
   /*  Choose TechWave--container--start */
    .main-container h3{
