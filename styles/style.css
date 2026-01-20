@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: 2px solid red !important;
 }
 body{
     font-family: 'inter', sans-serif ;
@@ -193,7 +194,7 @@ body{
     margin-top: 16px;
     color: #fefefef9;
 }
-/* "image-container start */
+ /*  Choose TechWave--container--start */
 .main-container h3{
     text-align: center;
     color: white;
@@ -286,7 +287,7 @@ body{
     width: 20px;
     height: auto;
 }
-/* ifreme style code */
+/*ifreme-container-start */
 .section-container h2{
     font-size: 48px;
     font-style: bold;
@@ -350,7 +351,7 @@ body{
     
 }
 .iframe-logo img{
-    padding-top: 5px;
+    padding-top: 10px;
     align-items: center;
     text-align: center;
 }
@@ -400,6 +401,55 @@ body{
     padding: 10px;
     border-radius: 50%;
 }
+/* footer-container--start */
+.main-footer{
+
+    background-image: url(../image/footer-bg.png);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 120px;
+}
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+   
+
+}
+.footer-logo{
+ width: 380px;
+ height: 60px;
+ margin: 0 auto;
+  
+    
+    
+}
+.footer-icon{
+   display: flex;
+   gap: 40px;
+   padding-top: 32px;
+}
+.footer-icon-text{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+.footer-icon-text p{
+    color: #c1bebef9;
+    font-size: 16px;
+    font-weight: 500;
+}
+.footer-end-text{
+    padding-top: 32px;
+    padding-bottom: 120px;
+    font-size: 14px;
+    color: #c1bebef9;
+}
 
 
 
@@ -429,7 +479,7 @@ body{
     flex-direction: row;
     width: 100%;
    }
- /*   about-section responsive*/
+ /*   about--section--start*/
    .about{
     padding-bottom: 5px;
    }
@@ -446,6 +496,8 @@ body{
    .about-text{
     display: flex;
     flex-wrap: wrap;
+    margin-top: 60px;
+    margin-bottom: 60px;
 
    }
    .about-card{
@@ -453,7 +505,7 @@ body{
     margin-bottom: 30px;
     text-align: center;
    }
-   /* "image-container responsive */
+  /*  Choose TechWave--container--start */
    .main-container h3{
     text-align: center;
     padding-top: 60px;
@@ -466,9 +518,17 @@ body{
     grid-template-columns: 1fr;
     gap: 30px;
     }
-    .image1, .image2, .image5{
+    .image2, .image5{
         width: 100%;
+        
     }
+    .image1{
+   
+    width: 100% !important;
+    height: auto;
+    
+    }
+    /* ifreme--container--start */
     .ifreme{
         display: grid;
         grid-template-columns: 1fr;
@@ -495,6 +555,45 @@ body{
         display: flex;
         justify-content: center;
     }
-    
+    /* footer--container--start */
+    .footer-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .main-footer{
+        width: 100%;
+    }
+    .footer-logo{
+        width: 120px;
+        height: 40px;
+    }
+    .footer-icon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        width: 100%;
+       
+        
+    }
+    .footer-icon div{
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-footer{
+        margin-top: 39px;
+    }
+    .footer-container{
+        padding-top: 40px;
+    }
+    .footer-end-text{
+        padding-bottom: 40px;
+    }
 
 }
